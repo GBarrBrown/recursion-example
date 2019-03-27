@@ -27,3 +27,27 @@ function sqrNums() {
     count < max ? sqrNums() : console.log('done')
 }
 sqrNums()
+
+
+// factorials Recursively
+count = 0
+
+function factorials() {
+    count === 0 ? console.log('-- factorials --') : null
+    count++
+    let curFactorial = factorialSum(count)
+    console.log(`${count}!: ${curFactorial}`)
+    count < max ? factorials() : console.log('done')
+}
+
+function factorialSum(num) {
+    const factorialReducer = (acc, cur) => acc * cur
+    let cur = num
+    let factorialArr = []
+    while(cur > 0){
+        factorialArr.push(cur)
+        cur--
+    }
+    return factorialArr.reduce(factorialReducer)
+}
+factorials()
