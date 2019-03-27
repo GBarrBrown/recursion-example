@@ -1,0 +1,8 @@
+{
+  "name": "recursion-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GBarrBrown/recursion-example.git",
+  "author": "gbarrbrown <gbb7899@gmail.com>",
+  "license": "MIT"
+}
